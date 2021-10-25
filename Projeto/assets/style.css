@@ -84,8 +84,14 @@ p{
     font-size: 35px;
 }
 
+
 .RedeSociais a{
     background-color: #323238;
     border-radius: 5px;
     padding: 5px;
+    transition: all 0.5s;
 }
+.RedeSociais a:hover{
+    background-color: #d00061;
+}
+
