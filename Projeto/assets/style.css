@@ -78,6 +78,9 @@ p{
     gap: 0.7rem;
     justify-content: center;
 }
+.RedeSociais li{
+    list-style: none;
+}
 
 .RedeSociais i {
     color: var(--gray);
@@ -85,13 +88,13 @@ p{
 }
 
 
-.RedeSociais a{
+.RedeSociais li {
     background-color: #323238;
     border-radius: 5px;
     padding: 5px;
     transition: all 0.5s;
 }
-.RedeSociais a:hover{
+.RedeSociais li:hover{
     background-color: #d00061;
 }
 
