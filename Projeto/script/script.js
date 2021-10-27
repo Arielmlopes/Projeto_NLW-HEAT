@@ -9,12 +9,22 @@
 
  function mudandoLinksRedeSocial(){
       for( let li of socialLinks.children){
-          const social = li.getAtribute('class')
+          const social = li.getAttribute('class')
         li.children[0].href = `https://${social}.com/${linksRedeSocial[social]}`
 
       }
  }
 
-//  mudandoLinksRedeSocial()
+ mudandoLinksRedeSocial()
 
-   
+   function getGithubInfos(){
+    const url = `https://api.github.com/users/${linksRedeSocial.github}`
+    fetch(url)
+      .then(response => response.json())
+       .then(data =>  {
+        nameUser.textContent = data.name 
+        bioUser.textContent = data.bio
+        FotoUser.src = data.avatar_url 
+       })
+   }
+   getGithubInfos()
